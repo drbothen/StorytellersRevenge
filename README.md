@@ -3,3 +3,9 @@ This project is part of the Udacity VR Nanodegree program, and is focused on 360
 
 ## Lessons Learned
 Yet another lesson where I learned quite a bit more than I believed I would when I started this project.  For starters, I've become quite familiar with the Unity video player, which is very nice to use and has a lot of built-in features to make playing videos in Unity easier.  Streaming videos via a URL is a little bit of a trade-off, while it keeps the files sizes down, in order to have it stream fast enough, you have to reduce the quality of the video significantly.
+
+## Notes
+
+The source media has been removed for submission.
+Unity Version: 2017.1.1f1
+Googlevr: 1.70.0
