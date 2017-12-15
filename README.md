@@ -7,5 +7,7 @@ Yet another lesson where I learned quite a bit more than I believed I would when
 ## Notes
 
 The source media has been removed for submission.
+Inside the Asset folder is an audio folder with a zip. This needs to be unzipped into the audio folder. The audio file was to big per github rules.
+
 Unity Version: 2017.1.1f1
 Googlevr: 1.70.0
