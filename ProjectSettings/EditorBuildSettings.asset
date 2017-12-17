@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/ChoseAdventure.unity
     guid: 4c34bdd64b6b59342bd2fce9e2bee9f9
   - enabled: 1
-    path: Assets/ITVictims.unity
-    guid: 8575d28e5edf0ea47adc182d9b0471a5
+    path: Assets/scene01.unity
+    guid: 00e6fe8af866c3b4ea2a2fa6a8603c5e
   - enabled: 1
-    path: Assets/ITVis.unity
-    guid: 6aa08a6268199a34dbc425b2aebe1a96
+    path: Assets/scene02.unity
+    guid: 03f0bd3d26d42ba4d9c0a2e5515eaff3
+  - enabled: 1
+    path: Assets/scene03.unity
+    guid: 71b6da3e3985600459f861f71382fcfd
