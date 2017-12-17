@@ -1,17 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class VideoControler : MonoBehaviour
 {
 
-    private UnityEngine.Video.VideoPlayer videoPlayer;
+    private VideoPlayer videoPlayer;
     public GameObject pauseSplash; //splash screen that displays Pause Gui
     public GameObject choiceSplash; //splash screen that displays choice Gui
 
     //[SerializeField]
     //private AudioSource audioSource;
+
 
     // Use this for initialization
     void Start()
@@ -25,19 +28,22 @@ public class VideoControler : MonoBehaviour
     void Update()
     {
         //Play or pause the video from user input
-        if (Input.GetKeyDown("space") ||
-            Input.GetMouseButtonDown(0))
+        if (pauseSplash)
         {
-            if (videoPlayer.isPlaying)
+            if (Input.GetKeyDown("space") ||
+                Input.GetMouseButtonDown(0))
             {
-                videoPlayer.Pause();
-                pauseSplash.SetActive(true);
-            }
-
-            else
-            {
-                videoPlayer.Play();
-                pauseSplash.SetActive(false);
+                if (videoPlayer.isPlaying)
+                {
+                    videoPlayer.Pause();
+                    pauseSplash.SetActive(true);
+                }
+               
+//                else
+//                {
+//                    videoPlayer.Play();
+//                    pauseSplash.SetActive(false);
+//                }
             }
         }
     }
@@ -47,5 +53,26 @@ public class VideoControler : MonoBehaviour
         vp.Pause();
         choiceSplash.SetActive(true);
     }
+
+    // PlayPause Controller
+    public void PlayPause()
+    {
+        if (videoPlayer.isPlaying)
+        {
+            videoPlayer.Pause();
+        }
+        else
+        {
+            videoPlayer.Play();
+        }
+    }
+
+    // Restart Video controoler
+    public void Restart()
+    {
+        videoPlayer.Stop();
+        videoPlayer.Play();
+    }
+
 }
 
